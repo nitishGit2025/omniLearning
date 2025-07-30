@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Transform: Single Object into Multiple Objects</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FirstName&quot; : &quot;Test&quot;,
+  &quot;LastName&quot; : &quot;Contact&quot;,
+  &quot;Email&quot; : &quot;abc@pk.in&quot;,
+  &quot;CompanyName&quot; : &quot;Google&quot;,
+  &quot;Website&quot; : &quot;www.Google.com&quot;,
+  &quot;UserName&quot; : &quot;abc@pk.in.sb&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTransformSingleObjectToMultipleObjects</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>38b712b3-052f-4645-9612-b960555811a0</globalKey>
+        <inputFieldName>FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account:Contact:FirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>49b5c5e2-b2f8-45ac-9173-8cade22e09a7</globalKey>
+        <inputFieldName>FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>User:FirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7944c9c1-a7a3-4968-ace4-5633c57b849a</globalKey>
+        <inputFieldName>LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>User:LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b9906cc5-4c03-4e72-aa39-61bdb57e24fd</globalKey>
+        <inputFieldName>UserName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>User:Username</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>10865493-dece-4dfd-a163-153dddff52bb</globalKey>
+        <inputFieldName>Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>User:Email</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>acf33b46-4b62-4bec-b760-e244e2dbe0d2</globalKey>
+        <inputFieldName>CompanyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cc9f10b3-64bc-4dff-b8c0-e6693fc92386</globalKey>
+        <inputFieldName>LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account:Contact:LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d87e6751-4a40-4a88-a1f4-1a94fa7561cd</globalKey>
+        <inputFieldName>Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account:Contact:Email</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d26ca55a-14be-4706-9ba3-342e749ae3d4</globalKey>
+        <inputFieldName>Website</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformSingleObjectToMultipleObjects</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account:Website</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;FirstName&quot; : &quot;Test&quot;,
+  &quot;LastName&quot; : &quot;Contact&quot;,
+  &quot;Email&quot; : &quot;abc@pk.in&quot;,
+  &quot;CompanyName&quot; : &quot;Google&quot;,
+  &quot;Website&quot; : &quot;www.Google.com&quot;,
+  &quot;UserName&quot; : &quot;abc@pk.in.sb&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTransformSingleObjectToMultipleObjects_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

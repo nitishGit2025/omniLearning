@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;timeStamp&quot; : null,
+  &quot;CaseComments&quot; : {
+    &quot;Comment&quot; : null,
+    &quot;PublicComment&quot; : null,
+    &quot;PostComment&quot; : null
+  },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CaseComments&quot; : null,
+    &quot;CaseDetails&quot; : null,
+    &quot;SelectAccountAndCase&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;CaseDetails&quot; : {
+    &quot;SelectCase&quot; : null,
+    &quot;CustomLWC1&quot; : null
+  },
+  &quot;ContextId&quot; : null,
+  &quot;SelectAccountAndCase&quot; : {
+    &quot;SelectAccount&quot; : null
+  },
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRPostCaseComment</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a9253e77-0808-4e1c-94db-ccfe4ebc389d</globalKey>
+        <inputFieldName>CaseDetails:SelectCase</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPostCaseComment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParentId</outputFieldName>
+        <outputObjectName>CaseComment</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>79e99e6d-bf15-4838-beae-ab0c6e0dcc02</globalKey>
+        <inputFieldName>CaseComments:Comment</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPostCaseComment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommentBody</outputFieldName>
+        <outputObjectName>CaseComment</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5f26a423-ca9d-41ba-99eb-bbade2fe1e45</globalKey>
+        <inputFieldName>CaseComments:PublicComment</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPostCaseComment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsPublished</outputFieldName>
+        <outputObjectName>CaseComment</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>27e02b22-ca95-4aca-aba7-207c3d59d9f5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRPostCaseComment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>CaseComment</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CaseComments&quot; : {
+    &quot;Comment&quot; : &quot;hello&quot;,
+    &quot;PublicComment&quot; : true,
+    &quot;PostComment&quot; : null
+  },
+  &quot;CaseDetails&quot; : {
+    &quot;SelectCase&quot; : &quot;500f6000002UEkLAAW&quot;,
+    &quot;CustomLWC1&quot; : null
+  },
+  &quot;SelectAccountAndCase&quot; : {
+    &quot;SelectAccount&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRPostCaseComment_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

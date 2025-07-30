@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Transform: Converting Yes/No into Boolean</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Movies&quot; : [ {
+    &quot;Name&quot; : &quot;Grren Latern&quot;,
+    &quot;Genre&quot; : &quot;DC&quot;,
+    &quot;SuperHit&quot; : &quot;No&quot;
+  }, {
+    &quot;Name&quot; : &quot;Iron Man&quot;,
+    &quot;Genre&quot; : &quot;MCU&quot;,
+    &quot;SuperHit&quot; : &quot;Yes&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTransformDataConversionYesNoToBoolean</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>69f57a80-c243-4604-8ecf-746acf1af19e</globalKey>
+        <inputFieldName>Movies:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformDataConversionYesNoToBoolean</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Movies:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6f232426-17f0-41c8-8abe-843ff81164e6</globalKey>
+        <inputFieldName>Movies:SuperHit</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformDataConversionYesNoToBoolean</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>Movies:SuperHit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Yes&quot; : &quot;true&quot;,
+  &quot;No&quot; : &quot;false&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8efe6624-522e-4de2-8991-e4b76d72e713</globalKey>
+        <inputFieldName>Movies:Genre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransformDataConversionYesNoToBoolean</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Movies:Genre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Movies&quot; : [ {
+    &quot;Name&quot; : &quot;Grren Latern&quot;,
+    &quot;Genre&quot; : &quot;DC&quot;,
+    &quot;SuperHit&quot; : &quot;No&quot;
+  }, {
+    &quot;Name&quot; : &quot;Iron Man&quot;,
+    &quot;Genre&quot; : &quot;MCU&quot;,
+    &quot;SuperHit&quot; : &quot;Yes&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTransformDataConversionYesNoToBoolean_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
